@@ -1,5 +1,5 @@
 body {
-    --bg-color: #E5E5E5;
+    --bg-color: #FFFFFF;
     --bg-secondary-color: #141414;
     --text-color: #000000;
     --text-secondary-color: #FFFFFF;
@@ -17,4 +17,61 @@ html, body {
     line-height: var(--base-line-height);
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template: minmax(98px, auto) 1fr minmax(617px, auto) / 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-right: 120px;
+    padding-left: 120px;
+}
+
+.header {
+    grid-area: header;
+    border-bottom: 1px solid var(--seporator-color);
+}
+
+.header-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.header__list {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__list li {
+    list-style-type: none;
+}
+
+.nav__item {
+    font-size: 14px;
+    line-height: var(--base-line-height);
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
 }
