@@ -8,7 +8,7 @@ body {
     --base-font-size: 16px;
     --img--title-font-size: 20px;
     --base-line-height: 24px;
-    --font-family-secondary: 'Tenor', sans-serif;
+    --font-family-secondary: 'Tenor Sans', sans-serif;
 }
 
 html, body {
@@ -138,7 +138,7 @@ h1 {
 .galary__card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
 .galary__text {
@@ -154,7 +154,12 @@ h1 {
     border-bottom: 1px solid var(--seporator-color);
 }
 
-.galary__name {
+.galary__title {
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-name-galary-color);
     padding-bottom: 30px;
 }
 
@@ -183,6 +188,18 @@ h1 {
 .post-btn a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+.featured {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.galary__featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
 }
 
 .footer {
