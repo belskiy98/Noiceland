@@ -3,9 +3,12 @@ body {
     --bg-secondary-color: #141414;
     --text-color: #000000;
     --text-secondary-color: #FFFFFF;
+    --text-name-galary-color: #999999;
     --seporator-color:  #E6E6E6;
     --base-font-size: 16px;
+    --img--title-font-size: 20px;
     --base-line-height: 24px;
+    --font-family-secondary: 'Tenor', sans-serif;
 }
 
 html, body {
@@ -30,7 +33,7 @@ html, body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1201px;
     margin: 0 auto;
     padding-right: 120px;
     padding-left: 120px;
@@ -70,6 +73,79 @@ html, body {
 
 .main {
     grid-area: main;
+}
+
+.illustration {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid var(--seporator-color);
+}
+
+.galary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 51px;
+}
+
+.galary__body {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+}
+
+.galary__name {
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-name-galary-color);
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-family: var(--font-family-secondary);
+    font-weight: 400;
+}
+
+.galary__desc {
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    color: #666666;
+}
+
+.galary__link a {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.galary__items {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 74px;
+    grid-template-columns: repeat(auto-fit, minmax(387px, 1fr));
+    padding-top: 60px;
+}
+
+.galary__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.galary__text {
+    font-size: var(--img--title-font-size);
+    line-height: var(--base-line-height);
+    text-transform: uppercase;
+    font-family: var(--font-family-secondary);
 }
 
 .footer {
