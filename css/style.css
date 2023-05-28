@@ -204,4 +204,29 @@ h1 {
 
 .footer {
     grid-area: footer;
+    background-color: var(--bg-secondary-color);
+    color: var(--text-secondary-color);
+}
+
+.footer-block {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    padding-top: 93px;
+    padding-bottom: 95px;
+}
+
+.footer__copy {
+    display: flex;
+    column-gap: 15px;
+    border-bottom: 1px solid #4D4D4D;
+    padding-bottom: 62px;
+}
+
+.copy__text {
+    align-self: flex-end;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-name-galary-color);
 }
