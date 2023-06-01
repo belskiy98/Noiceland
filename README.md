@@ -7,3 +7,6 @@ Technologies used by a website: HTML/CSS
 
 ##### Screenshot of the desktop version #####
 ![Screenshot of the desktop version](./img/readme-img.jpg)
+
+##### Screenshot of the mobile version #####
+![Screenshot of the desktop version](./img/readme-mob-img.jpg)
