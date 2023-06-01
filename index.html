@@ -11,10 +11,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js"></script>
     <title>Noiceland</title>
 </head>
 <body>
     <div class="wrapper">
+        <div class="mobile-menu">
+            <div class="mobile-menu-row">
+                <div class="mobile__row">
+                <nav>
+                    <ul class="mobile-nav">
+                        <li><a class="nav__item" href="#">Home</a></li>
+                        <li><a class="nav__item" href="#laster">Laster</a></li>
+                        <li><a class="nav__item" href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-menu-controls">
+                <button class="mobile-button" id="close-menu-btn">
+                    <img src="./img/close-menu-btn.svg" width="23" height="23">
+                </button>
+            </div>
+            </div>
+        </div>
         <div class="header">
             <div class="container">
                 <div class="header-block">
@@ -43,6 +62,9 @@
                             <li><a class="nav__item" href="#">About</a></li>
                         </ul>
                     </nan>
+                    <button class="mobile-button" id="open-menu-btn">
+                        <img src="./img/open-menu-btn.svg" width="33" height="20">
+                    </button>
                 </div>
             </div>
         </div>
@@ -50,7 +72,7 @@
             <div class="container">
                 <section class="illustration">
                     <div class="galary">
-                        <div class="galary__img">
+                        <div class="main__img">
                             <a href="#"><img src="./img/main-img.jpg" width="721" height="474"></a>
                         </div>
                         <div class="galary__body">
@@ -67,7 +89,7 @@
                                 <a href="#"><img src="./img/city-img.jpg" width="387" height="254"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Helmut Lang celebrates taxi drivers worldwide in latest campaign</div>
+                            <div class="galary__text"><a href="#">Helmut Lang celebrates taxi drivers worldwide in latest campaign</a></div>
                             <div class="galary__link"><a href="#">By Alessandra Ortiz</a></div>
                         </div>
                         <div class="galary__card">
@@ -75,7 +97,7 @@
                                 <a href="#"><img src="./img/food-img.jpg" width="387" height="254"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Bowlcut launch a new summer collection that pays homage to “UK legends”</div>
+                            <div class="galary__text"><a href="#">Bowlcut launch a new summer collection that pays homage to “UK legends”</a></div>
                             <div class="galary__link"><a href="#">By Alessandra Ortiz</a></div>
                         </div>
                         <div class="galary__card">
@@ -83,7 +105,7 @@
                                 <a href="#"><img src="./img/human-beach-img.jpg" width="387" height="254"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Thousands of previously unseen photographs by Andy Warhol will be made public this Autumn</div>
+                            <div class="galary__text"><a href="#">Thousands of previously unseen photographs by Andy Warhol will be made public this Autumn</a></div>
                             <div class="galary__link"><a href="#">By Alessandra Ortiz</a></div>
                         </div>
                         <div class="galary__card">
@@ -91,7 +113,7 @@
                                 <a href="#"><img src="./img/card-img.jpg" width="387" height="254"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">London-based Yinka Ilori’s storytelling furniture</div>
+                            <div class="galary__text"><a href="#">London-based Yinka Ilori’s storytelling furniture</a></div>
                             <div class="galary__link"><a href="#">By Alessandra Ortiz</a></div>
                         </div>
                         <div class="galary__card">
@@ -99,7 +121,7 @@
                                 <a href="#"><img src="./img/human.jpg" width="387" height="254"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Anonymous Israeli art collective Broken Fingaz direct music video for U2 and Beck</div>
+                            <div class="galary__text"><a href="#">Anonymous Israeli art collective Broken Fingaz direct music video for U2 and Beck</a></div>
                             <div class="galary__link"><a href="#">By Alessandra Ortiz</a></div>
                         </div>
                         <div class="galary__card">
@@ -107,7 +129,7 @@
                                 <a href="#"><img src="./img/tunnel.jpg" width="387" height="254"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Suzanne Saroff’s meticulously arranged photographs alter perceptions</div>
+                            <div class="galary__text"><a href="#">Suzanne Saroff’s meticulously arranged photographs alter perceptions</a></div>
                             <div class="galary__link"><a href="#">By Alessandra Ortiz</a></div>
                         </div>
                     </div>
@@ -120,7 +142,7 @@
                                 <a href="#"><img src="./img/main-img.jpg" width="285" height="187"></a>
                             </div>
                             <div class="galary__name">Illustration</div>
-                            <div class="galary__text">Japan House opens in mountainside to foster peak creativity.</div>
+                            <div class="galary__text"><a href="#">Japan House opens in mountainside to foster peak creativity</a></div>
                             <div class="galary__link"><a href="#">By Reta Torphy</a></div>
                         </div>
                         <div class="galary__card">
@@ -128,7 +150,7 @@
                                 <a href="#"><img src="./img/city-img.jpg" width="285" height="187"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Helmut Lang celebrates taxi drivers worldwide in latest campaign</div>
+                            <div class="galary__text"><a href="#">Helmut Lang celebrates taxi drivers worldwide in latest campaign</a></div>
                             <div class="galary__link"><a href="#">By Alessandra Ortiz</a></div>
                         </div>
                         <div class="galary__card">
@@ -136,7 +158,7 @@
                                 <a href="#"><img src="./img/food-img.jpg" width="285" height="187"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Bowlcut launch a new summer collection that pays homage to “UK legends”</div>
+                            <div class="galary__text"><a href="#">Bowlcut launch a new summer collection that pays homage to “UK legends”</a></div>
                             <div class="galary__link"><a href="#">By Rosanna Ondricka</a></div>
                         </div>
                         <div class="galary__card">
@@ -144,7 +166,7 @@
                                 <a href="#"><img src="./img/human-beach-img.jpg" width="285" height="187"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Thousands of previously unseen photographs by Andy Warhol will be made public this Autumn</div>
+                            <div class="galary__text"><a href="#">Thousands of previously unseen photographs by Andy Warhol will be made public this Autumn</a></div>
                             <div class="galary__link"><a href="#">By Annie Lueilwitz</a></div>
                         </div>
                         <div class="galary__card">
@@ -152,7 +174,7 @@
                                 <a href="#"><img src="./img/card-img.jpg" width="285" height="187"></a>
                             </div>
                             <div class="galary__name">Interactive Design</div>
-                            <div class="galary__text">London-based Yinka Ilori’s storytelling furniture</div>
+                            <div class="galary__text"><a href="#">London-based Yinka Ilori’s storytelling furniture</a></div>
                             <div class="galary__link"><a href="#">By Annie Lueilwitz</a></div>
                         </div>
                         <div class="galary__card">
@@ -160,7 +182,7 @@
                                 <a href="#"><img src="./img/human.jpg" width="285" height="187"></a>
                             </div>
                             <div class="galary__name">Graphic Design</div>
-                            <div class="galary__text">Anonymous Israeli art collective Broken Fingaz direct music video for U2 and Beck</div>
+                            <div class="galary__text"><a href="#">Anonymous Israeli art collective Broken Fingaz direct music video for U2 and Beck</a></div>
                             <div class="galary__link"><a href="#">By Simeon Brekke</a></div>
                         </div>
                         <div class="galary__card">
@@ -168,7 +190,7 @@
                                 <a href="#"><img src="./img/tunnel.jpg" width="285" height="187"></a>
                             </div>
                             <div class="galary__name">Architecture</div>
-                            <div class="galary__text">Suzanne Saroff’s meticulously arranged photographs alter perceptions</div>
+                            <div class="galary__text"><a href="#">Suzanne Saroff’s meticulously arranged photographs alter perceptions</a></div>
                             <div class="galary__link"><a href="#">By Reta Torphy</a></div>
                         </div>
                         <div class="galary__card">
@@ -176,8 +198,8 @@
                                 <a href="#"><img src="./img/building.jpg" width="285" height="187"></a>
                             </div>
                             <div class="galary__name">Graphic Design</div>
-                            <div class="galary__text">Anu Ambasna’s playful illustrations celebrate club culture, brown bodies and perfect paunches</div>
-                            <div class="galary__link"><a href="#">By Leo Bartell</a></div>
+                            <div class="galary__text"><a href="#"><a href="#">Anu Ambasna’s playful illustrations celebrate club culture, brown bodies and perfect paunches</a></a></div>
+                            <div class="galary__link"><a href="#">By Leo Bartell></a></div>
                         </div>
                     </div>
                     <div class="button-latest">
@@ -187,36 +209,36 @@
                 <section class="featured">
                     <div class="galary__title">featured POSTS</div>
                     <div class="galary__featured">
-                        <div class="galary__card">
+                        <div class="galary__card card">
                             <div class="galary__img">
                                 <a href="#"><img src="./img/football.jpg" width="590" height="387"></a>
                             </div>
                             <div class="galary__name">Graphic Design</div>
-                            <div class="galary__text">A Brief History of the FIFA World Cup Logo</div>
+                            <div class="galary__text"><a href="#">A Brief History of the FIFA World Cup Logo</a></div>
                             <div class="galary__link"><a href="#">By lem Onojeghuo</a></div>
                         </div>
-                        <div class="galary__card">
+                        <div class="galary__card card">
                             <div class="galary__img">
                                 <a href="#"><img src="./img/pool.jpg" width="590" height="387"></a>
                             </div>
                             <div class="galary__name">Graphic Design</div>
-                            <div class="galary__text">Need a guide to LA’s graphic design scene? Shoplifters’ new issue has got your back</div>
+                            <div class="galary__text"><a href="#">Need a guide to LA’s graphic design scene? Shoplifters’ new issue has got your back</a></div>
                             <div class="galary__link"><a href="#">By Alessandra Ortiz</a></div>
                         </div>
-                        <div class="galary__card">
+                        <div class="galary__card card">
                             <div class="galary__img">
                                 <a href="#"><img src="./img/beach-img.jpg" width="590" height="387"></a>
                             </div>
                             <div class="galary__name">Photography</div>
-                            <div class="galary__text">Fred Rowson directs film for Years and Years</div>
+                            <div class="galary__text"><a href="#">Fred Rowson directs film for Years and Years</a></div>
                             <div class="galary__link"><a href="#">By Coby Gottlieb</a></div>
                         </div>
-                        <div class="galary__card">
+                        <div class="galary__card card">
                             <div class="galary__img">
                                 <a href="#"><img src="./img/iceberg.jpg" width="590" height="387"></a>
                             </div>
                             <div class="galary__name">Illustration</div>
-                            <div class="galary__text">M&C Saatchi and Fontsmith collaborate on font collection for House of St Barnabas</div>
+                            <div class="galary__text"><a href="#">M&C Saatchi and Fontsmith collaborate on font collection for House of St Barnabas</a></div>
                             <div class="galary__link"><a href="#">By Annie Lueilwitz</a></div>
                         </div>
                     </div>
